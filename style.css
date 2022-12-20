@@ -66,12 +66,120 @@ header div button{
     height: 100vh;
 }
 
-footer{
-    height: 50vh;
-    background: #2a2c2b;
+#sec-iii{
+    height: 100vh;
+    background: #006cc8;
 }
 
-@media (max-width:720px){
+
+
+footer{
+    height: 68vh;
+    width: 100%;
+}
+footer .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+    padding-top: 70px;
+}
+footer .container div{
+    width: 210px;
+}
+footer .container div h1{
+    font-size: 30px;
+    color: #2a2c2b;
+    font-weight: 600;
+}
+
+
+footer .container .left-foot img{
+    height: 110px;
+}
+
+
+footer .mid-i-foot .foot-body{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.mid-i-foot .foot-body a{
+    text-decoration: none;
+    transition: all 0.3s;
+}.mid-i-foot .foot-body a:hover{
+    color: #006cc8;
+}
+.mid-i-foot .foot-body div{
+    margin-top: 20px;
+}.mid-i-foot .foot-body a p{
+    margin-top: 30px;
+}
+
+footer .container .mid-ii-foot{
+    margin-top: 10px;
+}
+footer .container .mid-ii-foot .foot-body{
+    position: relative;
+    display: block;
+}
+.mid-ii-foot .foot-body div{
+    display: flex;
+    margin-top: 15px;
+}
+.mid-ii-foot .foot-body div span{
+    color: #006cc8;
+    position: relative;
+    font-size: 30px;
+}
+.mid-ii-foot .foot-body div .location-icon{
+    top: 15px;
+}
+.mid-ii-foot .foot-body div a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2a2c2b;
+    left: 4px;
+    transition: all 0.3s;
+    }.mid-ii-foot .foot-body div a:hover{
+    color: #006cc8;
+}
+
+
+footer .container .right-foot .foot-body{
+    position: relative;
+    display: block;
+}
+footer .container .right-foot{
+    padding-left: 50px;
+    width: 270px;
+    margin-top: 10px;
+}
+.right-foot .foot-body div{
+    display: flex;
+    margin-top: 15px;
+}
+.right-foot .foot-body div i{
+    color: #006cc8;
+    position: relative;
+    top: 1px;
+    font-size: 35px;
+}
+.right-foot .foot-body div a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2a2c2b;
+    left: 10px;
+    top: 5px;
+    transition: all 0.3s;
+    font-size: 20px;
+    }.right-foot .foot-body div a:hover{
+        color: #006cc8;
+}
+
+
+@media (max-width:942px){
 
     header{
         background: url("src/coverimagec.png");
@@ -122,4 +230,29 @@ footer{
         border: 1px solid white;
     }
 
+
+
+    footer{
+        height: 122vh;
+        width: 100%;
+    }
+    footer .container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    footer .container .mid-i-foot{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+    footer .container .mid-ii-foot{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    footer .container .right-foot{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
 }
